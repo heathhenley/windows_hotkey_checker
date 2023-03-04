@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windows_hotkey_checker"
+description = "A simple command line tool to check whether a hotkey is already registered by another program on Windows."
+version = "0.1.8"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+hotkeys = "windows_hotkey_checker.__main__:main"

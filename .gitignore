@@ -1,0 +1,5 @@
+dist
+.pypirc
+*_env
+*.egg-info
+__pycache__
