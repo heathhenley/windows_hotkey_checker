@@ -112,7 +112,7 @@ def modifier_code_and_vkey_to_readable(
   """ Converts a modifier code and virtual key code to a readable string """
   s = " + ".join(
     [x for x in to_readable_modifier_keys(mod_code, modifier_map)])
-  return f"  {s}, {vkey_map[vkey]}"
+  return f"{s}, {vkey_map[vkey]}"
 
 
 def list_used_hotkeys() -> list[str]:
